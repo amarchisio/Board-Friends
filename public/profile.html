@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profile</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <style>
+
+  #imageUpload
+  {
+      display: none;
+  }
+
+  #profileImage
+  {
+      cursor: pointer;
+  }
+
+
+  #profile-container img {
+      width: 300px;
+      height: 350px;
+  }
+</style>
+  <body>
+  <h3>Profile</h3>
+  <div class="row">
+    <div class="col-2 col-sm-1"><br><br/></div>
+    <div class="col-6 col-sm-4"><br><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="profile-container">
+   <image id="profileImage" src="images\propic.png" />
+</div>
+<input id="imageUpload" type="file"
+       name="profile_photo" placeholder="Photo" required="" capture><br/></div>
+    <div class="col-6 col-sm-4"><br><iframe src="https://calendar.google.com/calendar/embed?src=jonathan.w.thomas.pr.pa%40gmail.com&ctz=America/New_York" style="border: 0" width="700" height="500" frameborder="0" scrolling="no"></iframe><br/></div>
+    <div class="col-6 col-sm-4"><br><br/></div>
+    <div class="col-6 col-sm-4"><br><br/></div>
+  </div>
+  <div class="row">
+    <div class="col-2 col-sm-1"><br><br/></div>
+    <div class="col-3 col-sm-2"><a href="/users">Home</a></div>
+    <div class="col-4 col-sm-2"><a href="/findgames">Search games</a></div>
+    <div class="col-5 col-sm-2"><a href="/findusers">Search people</a></div>
+    <div class="col-6 col-sm-2"><br><br/></div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-6 col-sm-1"></div>
+        <div class="col-md-3">
+          <div class="well">
+            <h4 class="text-black"><span class="label label-danger pull-right"></span>Chat window</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h4 class="text-black"><span class="label label-success pull-right"></span><br>Games That You Want To Play<br/>
+            <br><input type="checkbox" id="myCheck1"> :D&D <br/>
+            <br><input type="checkbox" id="myCheck2"> :Magic <br/>
+            <br><input type="checkbox" id="myCheck3"> :B@HonTH <br/>
+            <br><input type="checkbox" id="myCheck4"> Chess <br/>
+            <br><input type="checkbox" id="myCheck5"> Mice&mistics <br/>
+            <br><input type="checkbox" id="myCheck6"> Arkom Horror <br/>
+            <br><input type="checkbox" id="myCheck7"> Monopoly <br/> </h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h4 class="text-black"><span class="label label-primary pull-right"></span><br>Games That You Own<br/>
+              <br><input type="checkbox" id="myCheck8"> :D&D <br/>
+              <br><input type="checkbox" id="myCheck9"> :Magic <br/>
+              <br><input type="checkbox" id="myCheck10"> :B@HonTH <br/>
+              <br><input type="checkbox" id="myCheck11"> Chess <br/>
+              <br><input type="checkbox" id="myCheck12"> Mice&mistics <br/>
+              <br><input type="checkbox" id="myCheck13"> Arkom Horror <br/>
+              <br><input type="checkbox" id="myCheck14"> Monopoly <br/> </h4>
+          </div>
+        </div>
+
+      </div><!--/row-->
+    </div><!--/col-12-->
+  </div><!--/row-->
+
+
+<script>
+  $("#profileImage").click(function(e) {
+$("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+if ( uploader.files && uploader.files[0] ){
+      $('#profileImage').attr('src',
+         window.URL.createObjectURL(uploader.files[0]) );
+}
+}
+
+$("#imageUpload").change(function(){
+fasterPreview( this );
+});
+function myFunction() {
+    var a = document.getElementById("myCheck1");
+    var b = document.getElementById("myCheck2");
+    var c = document.getElementById("myCheck3");
+    var d = document.getElementById("myCheck4");
+    var e = document.getElementById("myCheck5");
+    var f = document.getElementById("myCheck6");
+    var g = document.getElementById("myCheck7");
+    a.checked = true;
+    b.checked = true;
+    c.checked = true;
+    d.checked = true;
+    e.checked = true;
+    f.checked = true;
+    g.checked = true;
+}
+
+</script>
+</body>
+</html>
